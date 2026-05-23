@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queen Mary Godfrey | Data Scientist</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">QM<span>G</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="greeting">👋 Hello, I'm</p>
+        <h1 id="name">Queen Mary Godfrey</h1>
+        <h2 id="role" class="role-badge">Data Science Student</h2>
+        <p id="org" class="org-text"></p>
+        <p id="bio" class="bio-text"></p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="img-wrapper">
+          <img id="profile-img" src="images/profile.jpg" alt="Queen Mary Godfrey"
+          onerror="this.src='https://ui-avatars.com/api/?name=Queen+Mary+Godfrey&size=300&background=6366f1&color=fff&bold=true'">
+        </div>
+        <div class="img-glow"></div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <div class="arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-header">
+      <span class="section-tag">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🎯</div>
+        <h3>My Focus</h3>
+        <p>Passionate about transforming raw data into meaningful insights that drive decision-making.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">📊</div>
+        <h3>My Approach</h3>
+        <p>Combining statistical methods with modern machine learning techniques to solve real-world problems.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🌍</div>
+        <h3>My Goal</h3>
+        <p>Contributing to data-driven development across East Africa and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="section-header">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">My Skills</h2>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <div class="loading-pulse"></div>
+    </div>
+  </section>
+
+  <!-- QUALIFICATIONS -->
+  <section id="qualifications" class="qualifications">
+    <div class="section-header">
+      <span class="section-tag">My Background</span>
+      <h2 class="section-title">Qualifications</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2024 — Present</span>
+          <h3>Data Science Program</h3>
+          <p class="timeline-org">Eastern African Statistical Training Center</p>
+          <p>Studying advanced statistical methods, machine learning, data visualization, and applied data science for development.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">Certification</span>
+          <h3>Python for Data Science</h3>
+          <p class="timeline-org">Online Certification</p>
+          <p>Completed training in Python programming covering data wrangling, analysis, and visualization using pandas, numpy and matplotlib.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">Certification</span>
+          <h3>Statistical Analysis with R</h3>
+          <p class="timeline-org">Online Certification</p>
+          <p>Trained in statistical computing, data manipulation, and visualization using R programming language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="section-header">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <div class="loading-pulse"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-header">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value" id="phone">Loading...</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value" id="email">Loading...</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <p class="contact-label">Location</p>
+            <p class="contact-value">Dar es Salaam, Tanzania</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">QM<span>G</span></div>
+      <p>© 2026 Queen Mary Godfrey — Eastern African Statistical Training Center</p>
+      <p class="footer-sub">Built with 💜 and deployed on the Cloud</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
