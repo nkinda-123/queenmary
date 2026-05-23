@@ -1,6 +1,5 @@
 // ── Change this to your Render URL after deployment ──
-const API = 'http://localhost:3000';
-
+const API = 'https://queenmary-2.onrender.com';
 // ── Load Profile ─────────────────────────────────────
 async function loadProfile() {
   try {
